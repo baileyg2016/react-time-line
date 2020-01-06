@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 
 /**
  * @usage
- * <TimlineItem time={time} text={text} />
+ * <TimlineItem time={time} text={text} amount={amount} />
  */
-function TimlineItem({ time, text }) {
+function TimlineItem({ time, text, amount }) {
   return (
     <li>
       <i className="fa" />
@@ -15,6 +15,7 @@ function TimlineItem({ time, text }) {
           {time}
         </span>
         <div className="time-line-header">{text}</div>
+        <div className="time-line-header">{amount}</div>
       </div>
     </li>
   );
