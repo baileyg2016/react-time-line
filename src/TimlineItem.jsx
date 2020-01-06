@@ -15,7 +15,6 @@ function TimlineItem({ time, text, amount }) {
           {amount}
         </span>
         <div className="time-line-header">{text}</div>
-        <div className="time-line-header">{amount}</div>
       </div>
     </li>
   );
