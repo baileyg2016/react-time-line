@@ -1,6 +1,6 @@
 {
   "name": "react-time-line",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "React component for displaying timeline",
   "main": "dist/bundle.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "dev": "NODE_ENV=dev webpack-dev-server",
     "build": "rimraf dist && NODE_ENV=prod webpack"
   },
-  "author": "Arun Ghosh",
+  "author": "Bailey Spell",
   "repository": {
     "type": "git",
     "url": "https://github.com/arunghosh/react-time-line"
@@ -50,8 +50,8 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "typescript": "^3.1.6",
-    "webpack": "^4.26.1",
-    "webpack-cli": "^3.1.2",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.1.10"
   },
   "peerDependencies": {
