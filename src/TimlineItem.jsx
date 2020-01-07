@@ -6,12 +6,13 @@ import PropTypes from "prop-types";
  * <TimlineItem time={time} text={text} amount={amount} />
  */
 function TimlineItem({ time, text, amount }) {
+  console.log("am i getting this??")
   return (
     <li>
       <i className="fa" />
       <div className="time-line-item">
         <span className="time">
-          <i className="fa" />
+          <i />
           {amount}
         </span>
         <div className="time-line-header">{text}</div>
