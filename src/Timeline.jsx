@@ -17,7 +17,7 @@ function getFormattedData(items) {
     const dateStr = date.format("DD MMM YYYY");
     const list = activities[dateStr] || [];
     list.push({
-      time: date.format("hh:mm"),
+      time: amount,
       text,
       amount,
       key: index,
@@ -51,6 +51,7 @@ Timeline.propTypes = {
     PropTypes.shape({
       ts: PropTypes.string.isRequired,
       text: PropTypes.string.isRequired,
+      amount: PropTypes.string.isRequired
     })
   ).isRequired,
 };

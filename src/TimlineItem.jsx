@@ -6,14 +6,13 @@ import PropTypes from "prop-types";
  * <TimlineItem time={time} text={text} amount={amount} />
  */
 function TimlineItem({ time, text, amount }) {
-  console.log("am i getting this??")
   return (
     <li>
       <i className="fa" />
       <div className="time-line-item">
         <span className="time">
-          <i />
-          {amount}
+          <i className="fa" />
+          {time}
         </span>
         <div className="time-line-header">{text}</div>
       </div>
@@ -26,6 +25,7 @@ TimlineItem.defaultProps = {};
 TimlineItem.propTypes = {
   time: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
 };
 
 export default TimlineItem;
