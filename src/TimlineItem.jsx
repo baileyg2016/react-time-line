@@ -12,7 +12,7 @@ function TimlineItem({ time, text, amount }) {
       <div className="time-line-item">
         <span className="time">
           <i className="fa" />
-          {time}
+          {amount}
         </span>
         <div className="time-line-header">{text}</div>
       </div>
