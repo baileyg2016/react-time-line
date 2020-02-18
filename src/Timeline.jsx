@@ -28,6 +28,7 @@ function getFormattedData(items) {
 }
 
 function Timeline({ items }) {
+	console.log("am i getting hit?");
   const activities = getFormattedData(items);
   const dates = Object.keys(activities);
   return (
