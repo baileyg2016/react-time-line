@@ -9,7 +9,7 @@
     "lint:es": "eslint src",
     "lint:types": "tsc -p types/react-time-line",
     "dev": "NODE_ENV=dev webpack-dev-server",
-    "build": "react-scripts build"
+    "build": "rimraf dist && NODE_ENV=prod webpack"
   },
   "author": "Bailey Spell",
   "repository": {
