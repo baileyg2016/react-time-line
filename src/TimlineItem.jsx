@@ -5,14 +5,14 @@ import PropTypes from "prop-types";
  * @usage
  * <TimlineItem time={time} text={text} amount={amount} />
  */
-function TimlineItem({ time, text, amount }) {
+function TimlineItem({ text, amount }) {
   return (
     <li>
       <i className="fa" />
       <div className="time-line-item">
         <span className="time">
           <i className="fa" />
-          {amount}
+          {"$".concat(amount)}
         </span>
         <div className="time-line-header">{text}</div>
       </div>
@@ -23,7 +23,6 @@ function TimlineItem({ time, text, amount }) {
 TimlineItem.defaultProps = {};
 
 TimlineItem.propTypes = {
-  time: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   amount: PropTypes.string.isRequired,
 };
